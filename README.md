@@ -9,7 +9,7 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
       Installer will automatically add `vagrant` to your system path so that it is available in terminals.
     * Vagrant uses VirtualBox for creating VMs. So install VirtualBox from [virtualbox-download](https://www.virtualbox.org/wiki/Downloads) here.
 
-* Setting up multiple VMs
+* Creating multiple VMs
     * Open up the terminal.
     * Git clone the source code or copy the `Vagrantfile` from multi-vagrant-file folder.
         ```
@@ -19,5 +19,7 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
         ```
            vagrant up
         ```
-      This command will start creating all three VMs i.e. ansible-VM, web-VM and database-VM.
+      This command will start creating all three VMs i.e. ansible-VM `ansible`, web-VM `web` and database-VM `db`.
     
+* Setting up SSH connection between VMs
+    * 
