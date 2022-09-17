@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
 	ab.vm.provider "virtualbox" do |vb|
   		vb.memory = "1024"
    	end
-	ab.vm.synced_folder "../ansible-files", "/vagrant_data"
+	ab.vm.synced_folder "./ansible-files", "/vagrant_data"
 	ab.vm.provision "shell", inline: <<-SHELL
       	#!/bin/bash
 		sudo apt update -y
