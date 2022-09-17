@@ -22,4 +22,11 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
       This command will start creating all three VMs i.e. ansible-VM `ansible`, web-VM `web` and database-VM `db`.
     
 * Setting up SSH connection between VMs
-    * 
+    * Login to `ansible` using the following command
+        ```
+	     vagrant ssh ansible
+        ```
+    * Change the hostname from `vagrant` to `ansible`.
+        ```
+           vim /etc/hostname
+        ```
