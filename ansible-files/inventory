@@ -1,15 +1,15 @@
-web ansible_host=192.168.33.16
-db ansible_host=192.168.33.17
+web 
+db 
 
-[websrvr]
+[websrvgrp]
 web
 
-[dbsrvr]
+[dbsrvgrp]
 db
 
 [srvrs:children]
-websrvr
-dbsrvr
+websrvgrp
+dbsrvgrp
 
 [srvrs:vars]
 ansible_user=vagrant
