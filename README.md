@@ -116,6 +116,9 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
        ```
       During the time I made this project it threw an error in `Task [Install HTTPD]` as `yum error` "Cannot find a valid baseurl for repo". If it throws the error again. Then follow the steps below.
     * Check if the website is up by copying IP address of `web` and pasting it in url.
+       ```
+          192.168.33.16
+       ```
 
 * If error in `Task`
       
