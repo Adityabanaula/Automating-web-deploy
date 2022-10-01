@@ -142,4 +142,4 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
     * Follow the same step for `db` machine.
 
 
-## THANKS FOR CHECKING THIS REPOSITORY ##
+
