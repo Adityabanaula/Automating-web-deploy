@@ -11,7 +11,7 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
 
 * Creating multiple VMs
     * Open up the terminal.
-    * Git clone the source code or copy the `Vagrantfile` from multi-vagrant-file folder.
+    * Git clone the source code.
         ```
            git clone https://github.com/Adityabanaula/Automating-web-deploy.git
         ```
