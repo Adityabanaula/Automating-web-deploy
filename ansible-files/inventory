@@ -13,4 +13,4 @@ dbsrvgrp
 
 [srvrs:vars]
 ansible_user=vagrant
-ansible_ssh_private_key_file=sshkey.pem
+
