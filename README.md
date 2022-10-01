@@ -102,3 +102,44 @@ I have used Vagrant for this project. We can also use any cloud provider like AW
       Change the `PasswordAuthentication` to no. Do the same for `db`.
      
 * Start automation using ansible
+    * Now that everything has been setup. Move to the `/vagrant_data` directory.
+       ```
+          cd /vagrant_data
+       ```
+    * Check ansible is installed properly.
+       ```
+          ansible --version
+       ```
+    * Now run the automation using `ansible-playbook`.
+       ```
+          ansible-playbook -i inventory playbook.yaml
+       ```
+      During the time I made this project it threw an error in `Task [Install HTTPD]` as `yum error` "Cannot find a valid baseurl for repo". If it throws the error again. Then follow the steps below.
+
+* If error in `Task`
+      
+    * Login to `ansible` machine.
+       ```
+          vagrant ssh ansible
+       ```
+    * SSH into `web` machine.
+       ```
+          ssh vagrant@web
+       ```
+    * We will be adding Nameservers to the following file.
+       ```
+          vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
+       ```
+      Add the following Nameservers in the configuration file.
+       ```
+          DNS1=10.0.2.2
+          DNS2=8.8.8.8
+       ```
+    * Restart the `NetworkManager` service.
+       ```
+          systemctl restart NetworkManager
+       ```
+    * Follow the same step for `db` machine.
+
+
+## THANKS FOR CHECKING THIS REPOSITORY ##
